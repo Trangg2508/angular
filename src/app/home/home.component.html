@@ -1,8 +1,10 @@
-
 <div class="test">
-    <h3>My name is {{ name }}</h3>
     <h3>This is HOME component</h3>
-<p>To call this component, use "app-home" tag</p>
-<p>To change the name of tag, change selector in 'home.component.ts'</p>
-<p>To render this component to UI, import "app-home" tag into 'app.component.html'</p>
+    <h3>My name is {{ name }}</h3>
+    <input value="{{ name }}"/>
+    <br/><br/>
+    <!-- title in input will appear when user hover to input tag -->
+    <input [value]="name" title="đây là {{ name }}"/>
+    <br/><br/>
+    <input [value]="name" [title]="'đây là'  +  name" />
 </div>
