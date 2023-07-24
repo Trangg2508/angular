@@ -7,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit{
 public name = 'Trang';
+public age = 21;
 
 constructor() {};
 
-ngOnInit(): void {
-  
+ngOnInit(): void {}
+
+public resetName(): void {
+  console.log('reset name');
+  this.name = '';
 }
 }
