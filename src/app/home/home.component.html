@@ -1,12 +1,8 @@
 <div class="test">
-    <h3>This is HOME component</h3>
-    <input type="text" [(ngModel)]="age"/>
-    <h2>Hello {{ name }}</h2>
-    <h2>Your age is {{ age }}</h2>
-    <!-- <h4 *ngIf="age > 18">You are too old!!</h4>
-    <h4 *ngIf="age <= 18">You are too young!!</h4> -->
-    
-    <br/><br/>
-    <button (click)="resetName()">Reset name</button>
+    <h3> This is Home Component</h3>
+
+    <div *ngFor="let item of fruits; let i =index">
+        <li>{{ i }}. {{ item }}</li>
+    </div>
 
 </div>
