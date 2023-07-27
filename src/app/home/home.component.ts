@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   constructor() { };
 
   public ngOnInit(): void {
-    console.log('Fruit = ', this.fruits);
+    console.log('Fruit2 = ', this.fruit2);
   }
 
 
