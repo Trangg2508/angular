@@ -5,4 +5,26 @@
         <li>{{ i }}. {{ item }}</li>
     </div>
 
+    <table class="table">
+        <tr>
+            <th>Order</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Sale</th>
+
+        </tr>
+        <tr *ngFor="let item of fruit2; let i = index">
+            <td>{{ i }}</td>
+            <td>{{ item.name }}</td>
+            <td>
+                <span [ngClass]="{ ' so_am' : item.price < 0 }">{{ item.price }}</span>
+            </td>
+            <td>
+                <span *ngIf="item.sale === true">Discount 10%</span>
+                <span *ngIf="item.sale === false">No</span>
+
+            </td>
+        </tr>
+    </table>
+
 </div>
